@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+@font-face{
+    font-family: 'myFont';
+    src: url('matcha_world/Matcha World.ttf');
+}
+img{
+    max-width: 100%;
+    height: 400px;
+    display: block;
+    padding: 1%;
+}
+#page-wrapper{
+    background-color: rgb(255, 220, 220);
+    width: 100%;
+    margin: 0 auto;
+
+}
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 249, 214);
+}
+body{
+    background-color: rgb(216, 162, 162);
+    min-height: 100%;
+}
+main{
+    text-align: center;
+    background-color: rgb(255, 249, 214);
+    padding: 1%;
+    min-height: 100vh;
+
+}
+nav{
+    width: 30%;
+    background-color: rgb(255, 220, 220);
+}
+nav ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    flex-direction: column;
+    margin: 1%;
+    width: 100%;
+}
+nav a{
+    color: beige;
+    text-decoration: none;
+    font-size: calc(2px + 1.5vw);
+}
+nav li{
+    margin: 13%;
+    text-align: center;
+    border: rgb(142, 166, 107) 10px solid;
+    background-color: rgb(142, 166, 107);
+    flex: 1;
+    min-width: 0;
+}
+p{
+    text-align: left;
+    margin: 0.5%;
+}
+.smaller_container{
+    display: flex;
+    gap: 30px;
+}
+header, footer{
+    background-color: rgb(216, 162, 162);
+}
+footer{
+    margin-top: 0;
+}
+h3{
+    padding: 1%;
+}
+header{
+    font-family: 'myFont', sans-serif;
+    color: beige;
+}
+#calculator{
+    text-align: center;
+}
+#input_buttons input {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'myFont', sans-serif;
+    color: sienna;
+    border: 5px solid rgb(255, 220, 220);
+    border-radius: 25px;
+    margin: 10px;
+}
+
+#output {
+    width: 300px;
+    min-height: 70px;
+    margin: auto;
+    padding: 15px;
+
+    background-color: white;
+    border: 5px solid rgb(255, 220, 220);
+    border-radius: 20px;
+
+    font-size: calc(10px + 2vw);
+    font-family: 'myFont', sans-serif;
+    }
+
+.buttons_1 button,
+.buttons_2 button,
+.buttons_3 button,
+.buttons_4 button {
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+    margin: 12px;
+    background-color: rgb(142, 166, 107);
+    color: beige;
+
+    border: none;
+    border-radius: 25px;
+}
+
+#output {
+    font-size: calc(10px + 2vw);
+    font-family: 'myFont', sans-serif;
+}
+@media screen and (max-width: 900px) {
+
+    #container{
+        flex-direction: column;
+        height: auto;
+    }
+    img{
+        display: inline;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav ul{
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav li{
+        border: rgb(142, 166, 107) 10px solid;
+        text-align: center;
+        margin: 1%;
+    }
+
+    nav a{
+        color: beige;
+    }
+
+    main{
+        width: 100%;
+        margin: auto;
+    }
+
+    header{
+        text-align: center;
+    }
+    .smaller_container{
+        display: inline-block;
+    }
+}
