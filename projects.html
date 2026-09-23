@@ -6,35 +6,49 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Javascript Calculator</h1>
-  </header>
-    <nav>
-
-    </nav>
-    <main>
-        <script src="index.js"></script>
+  <div id="page-wrapper">
+      <header>
+          <h1>Lily Shi</h1>
+          <h6>My Online Resume</h6>
+      </header>
+      <div id="container">
+          <nav>
+              <ul>
+                  <li><a href = "index.html">Home</a></li>
+                  <li><a href = "projects.html" >Projects</a></li>
+                  <li><a href = "education.html">Education</a></li>
+                  <li><a href = "skills.html">Skills</a></li>
+                  <li><a href = "">Contact</a></li>
+                  <li><a href = "experiences.html">Experiences</a></li>
+              </ul>
+          </nav>
+        <main>
+        <h3> JavaScript Calculator</h3>
         <div id="input_buttons">
-        <input type="text" id="first-number">
-        <input type="text" id="second-number">
+            <input type="text" id="first-number">
+            <input type="text" id="second-number">
         </div>
         <div class="buttons_1">
-        <button onclick="addition()">+</button>
-        <button onclick="subtraction()">-</button>
+            <button onclick="addition()">+</button>
+            <button onclick="subtraction()">-</button>
         </div>
         <div class="buttons_2">
-        <button onclick="multiplication()">*</button>
-        <button onclick="division()">/</button>
+            <button onclick="multiplication()">*</button>
+            <button onclick="division()">/</button>
         </div>
         <div class="buttons_3">
-        <button onclick="power()">**</button>
+            <button onclick="power()">**</button>
         </div>
         <div class="buttons_4">
-        <button onclick="clearCalculator()">Clear</button>
+            <button onclick="clearCalculator()">Clear</button>
         </div>
         <h3 id="output"></h3>
-
     </main>
-    <footer>All Rights Reserved</footer>
+      </div>
+      <footer>
+          <p>All rights reserved: <a href ="">Credits</a>&#169;</p>
+      </footer>
+  </div>
+<script src="index.js"></script>
 </body>
 </html>

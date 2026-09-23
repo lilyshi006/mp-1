@@ -33,15 +33,16 @@ main{
     background-color: rgb(255, 249, 214);
     padding: 1%;
     min-height: 100vh;
+    width: 80%;
 
 }
 nav{
-    width: 30%;
+    width: 20%;
     background-color: rgb(255, 220, 220);
 }
 nav ul {
     display: flex;
-    padding-left: 0;
+    padding: 0;
     list-style: none;
     flex-direction: column;
     margin: 1%;
@@ -63,6 +64,7 @@ nav li{
 p{
     text-align: left;
     margin: 0.5%;
+    font-size: calc(2px + 1.5vw);
 }
 .smaller_container{
     display: flex;
@@ -73,6 +75,7 @@ header, footer{
 }
 footer{
     margin-top: 0;
+    font-size: 5px;
 }
 h3{
     padding: 1%;
@@ -80,6 +83,7 @@ h3{
 header{
     font-family: 'myFont', sans-serif;
     color: beige;
+    padding: 20px;
 }
 #calculator{
     text-align: center;
@@ -129,6 +133,67 @@ header{
     font-size: calc(10px + 2vw);
     font-family: 'myFont', sans-serif;
 }
+
+main h3{
+    font-family: 'myFont', sans-serif;
+    color: rgb(142, 166, 107);
+}
+
+.first_p,
+.second_p,
+.third_p {
+    text-align: left;
+    padding: 15px;
+}
+
+.date{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.experiences img {
+    margin: auto;
+}
+
+#prog_lang, #languages, #creative, #other h3 {
+    text-align: left;
+}
+.email, .phone, .linkedin, .github, .intern h3, .dshack h3 {
+    text-align: left;
+}
+.intern ul, .dshack ul {
+    text-align: left;
+    font-size: calc(10px + .5vw);
+}
+
+.intern li, .dshack li {
+    padding: 10px;
+}
+.contact-photo img{
+    flex: auto;
+}
+.contact_container {
+    display: inline-block;
+    width: 55%;
+    vertical-align: top;
+    text-align: left;
+}
+
+.contact-photo {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+
+.contact-photo img {
+    width: 80%;
+    height: auto;
+    border: 5px solid rgb(255, 220, 220);
+    background-color: rgb(255, 220, 220);
+    text-align: right;
+}
+
 @media screen and (max-width: 900px) {
 
     #container{
@@ -172,4 +237,5 @@ header{
     .smaller_container{
         display: inline-block;
     }
+
 }
